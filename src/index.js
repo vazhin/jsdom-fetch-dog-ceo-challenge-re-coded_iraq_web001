@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
       breed.classList.add('breed')
       breed.innerText = key;
       breedContainer.appendChild(breed);
-      breed.addEventListener('click', () => breed.style.color = 'red')  
+      breed.addEventListener('click', () => breed.style.color = 'red')
     }
   })
-  
+
   let breed = document.getElementsByClassName('breed')
   console.log(breed);
   let breedDropdown = document.querySelector('#breed-dropdown');
