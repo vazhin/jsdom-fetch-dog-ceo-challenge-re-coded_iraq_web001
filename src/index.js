@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       breed.innerText = key;
       breedContainer.appendChild(breed);
       breed.addEventListener('click', () => breed.style.color = 'red')
-      
+
       breedDropdown.addEventListener('change', (event) => {
         if (breed.innerText.charAt(0) == event.target.value){
           breedContainer.appendChild(breed);
