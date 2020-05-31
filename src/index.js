@@ -21,7 +21,7 @@ fetch(breedUrl)
   console.log(result);
   for (const key in result.message){
     let breed = document.createElement('li');
-    li.innerText = key;
+    breed.innerText = key;
     breedContainer.appendChild(breed);
   }
 })
