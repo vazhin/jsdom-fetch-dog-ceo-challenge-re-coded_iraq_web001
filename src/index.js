@@ -31,12 +31,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
   })
 
   // let breedDropdown = document.querySelector('#breed-dropdown');
-  // 
+  //
   // let option = document.querySelectorAll('option')
-  // 
+  //
   // console.log(option.value);
-  
-  
+
+
 
 
 })
