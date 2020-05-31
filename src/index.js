@@ -24,15 +24,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
     for (const key in result.message){
       let breed = document.createElement('li');
       breed.innerText = key;
-      breedContainer.appendChild(breed);
+      
       breed.addEventListener('click', () => breed.style.color = 'red')
-      console.log(breed.innerText.charAt(0));
+      
+      let breedDropdown = document.querySelector('#breed-dropdown');
+      breedDropdown.addEventListener('change', (event) => {
+        if (breed.innerText.charAt(0) == event.target.value){
+          breedContainer.appendChild(breed);
+        }
+      })
     }
-    let breedDropdown = document.querySelector('#breed-dropdown');
-    breedDropdown.addEventListener('change', (event) => {
-      event.target.value
-      if (breed.innerText.charAt(0))
-    })
   })
 
 
