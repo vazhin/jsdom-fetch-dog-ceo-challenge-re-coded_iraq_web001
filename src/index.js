@@ -19,7 +19,6 @@ fetch(breedUrl)
 .then(response => response.json())
 .then(result => {
   let breedContainer = document.querySelector('#dog-breeds');
-  console.log(result);
   for (const key in result.message){
     let breed = document.createElement('li');
     breed.innerText = key;
