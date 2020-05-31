@@ -26,17 +26,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
       breed.innerText = key;
       breedContainer.appendChild(breed);
       breed.addEventListener('click', () => breed.style.color = 'red')
-
+      console.log(breed.innerText.charAt(0));
     }
-    console.log(breed);
-    // let breedDropdown = document.querySelector('#breed-dropdown');
-    // breedDropdown.addEventListener('change', (event) => {
-    //   event.target.value
-    //   if (breed.innerText.charAt(0))
-    // })
+    let breedDropdown = document.querySelector('#breed-dropdown');
+    breedDropdown.addEventListener('change', (event) => {
+      event.target.value
+      if (breed.innerText.charAt(0))
+    })
   })
 
-
+  
 
 
 
