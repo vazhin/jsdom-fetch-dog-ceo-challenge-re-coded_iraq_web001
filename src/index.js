@@ -9,7 +9,6 @@ fetch(imgUrl)
   for (const element of result.message){
     let img = document.createElement('img');
     img.src = `${element}`;
-    img.width = '200px'
     imgContainer.appendChild(img);
   }
 })
