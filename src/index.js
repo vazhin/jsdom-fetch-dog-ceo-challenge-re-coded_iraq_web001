@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
   })
 
-  let breed = document.querySelectorAll('.breed')
+  let breed = document.getElementsByClassName('breed')
   console.log(breed);
   // let breedDropdown = document.querySelector('#breed-dropdown');
   // breedDropdown.addEventListener('change', (event) => {
