@@ -6,7 +6,7 @@ let imgContainer = document.querySelector('#dog-image-container');
 fetch(imgUrl)
 .then(response => response.json())
 .then(result => {
-  console.log(result);
+  console.log(result.message);
   for (const img of result.message){
     let img = document.createElement('img');
     img.src = result;
