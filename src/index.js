@@ -7,9 +7,9 @@ fetch(imgUrl)
 .then(response => response.json())
 .then(result => {
   console.log(result);
-  // for (const img of result){
-  //   let img = document.createElement('img');
-  //   img.src = result;
-  //   imgContainer.appendChild(img);
-  // }
+  for (const img of result.message){
+    let img = document.createElement('img');
+    img.src = result;
+    imgContainer.appendChild(img);
+  }
 })
