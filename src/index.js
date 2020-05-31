@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded' () => {
+document.addEventListener('DOMContentLoaded', (event) => {
 
   console.log('%c HI', 'color: firebrick')
 
