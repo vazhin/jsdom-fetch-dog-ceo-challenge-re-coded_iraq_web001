@@ -1,7 +1,6 @@
 console.log('%c HI', 'color: firebrick')
 
 const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
-let imgContainer = document.querySelector('#dog-image-container');
 
 fetch(imgUrl)
 .then(response => response.json())
@@ -9,6 +8,7 @@ fetch(imgUrl)
   console.log(result.message);
   for (const element of result.message){
     console.log(element);
+    let imgContainer = document.querySelector('#dog-image-container');
     let img = document.createElement('img');
     img.src = `${element}`;
     imgContainer.appendChild(img);
