@@ -6,9 +6,10 @@ let imgContainer = document.querySelector('#dog-image-container');
 fetch(imgUrl)
 .then(response => response.json())
 .then(result => {
-  for (const img of result){
-    let img = document.createElement('img');
-    img.src = result;
-    imgContainer.appendChild(img);
-  }
+  console.log(result);
+  // for (const img of result){
+  //   let img = document.createElement('img');
+  //   img.src = result;
+  //   imgContainer.appendChild(img);
+  // }
 })
