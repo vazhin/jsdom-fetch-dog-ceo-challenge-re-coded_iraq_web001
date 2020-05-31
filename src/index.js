@@ -27,3 +27,5 @@ fetch(breedUrl)
     breed.addEventListener('click', () => breed.style.color = 'red')
   }
 })
+
+let breedDropdown = document.querySelector('#breed-dropdown');
