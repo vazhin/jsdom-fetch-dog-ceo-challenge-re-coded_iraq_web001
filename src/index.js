@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
       let breedDropdown = document.querySelector('#breed-dropdown');
       breedDropdown.addEventListener('change', (event) => {
         if (breed.innerText.charAt(0) == event.target.value){
-          breedContainer.removeChild(breed);
           breedContainer.appendChild(breed);
         }
       })
