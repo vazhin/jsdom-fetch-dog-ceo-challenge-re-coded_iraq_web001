@@ -19,9 +19,9 @@ fetch(breedUrl)
 .then(result => {
   let breedContainer = document.querySelector('#dog-breeds');
   console.log(result);
-  // for (const element of result.message){
-  //   let img = document.createElement('img');
-  //   img.src = `${element}`;
-  //   imgContainer.appendChild(img);
-  // }
+  for (const key in result.message){
+    let breed = document.createElement('li');
+    li.innerText = key;
+    breedContainer.appendChild(breed);
+  }
 })
