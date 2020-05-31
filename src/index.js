@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     for (const key in result.message){
       let breed = document.createElement('li');
       breed.innerText = key;
-
+      breedContainer.appendChild(breed);
       breed.addEventListener('click', () => breed.style.color = 'red')
 
       // let breedDropdown = document.querySelector('#breed-dropdown');
