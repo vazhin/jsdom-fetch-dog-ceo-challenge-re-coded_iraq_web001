@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       breed.innerText = key;
       breedContainer.appendChild(breed);
       breed.addEventListener('click', () => breed.style.color = 'red')
-      
+
     }
     console.log(breed);
     // let breedDropdown = document.querySelector('#breed-dropdown');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // })
   })
 
-  
+
 
 
 
