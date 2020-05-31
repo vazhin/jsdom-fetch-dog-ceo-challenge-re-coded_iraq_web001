@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       breed.addEventListener('click', () => breed.style.color = 'red')
       console.log(breed.innerText.charAt(0));
 
-      
+
     }
   })
 
