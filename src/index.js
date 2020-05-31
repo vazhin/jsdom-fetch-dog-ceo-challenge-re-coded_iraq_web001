@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   fetch(breedUrl)
   .then(response => response.json())
   .then(result => updateBreeds)
-    
+
   })
 
 
