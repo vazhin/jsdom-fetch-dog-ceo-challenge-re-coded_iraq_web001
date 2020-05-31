@@ -9,5 +9,6 @@ fetch(imgUrl)
   for (const img of result){
     let img = document.createElement('img');
     img.src = result;
+    imgContainer.appendChild(img);
   }
 })
