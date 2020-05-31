@@ -35,7 +35,5 @@ document.addEventListener('domContentLoaded' () => {
 
   console.log(option.value);
 
-  
+
 })
-
-
