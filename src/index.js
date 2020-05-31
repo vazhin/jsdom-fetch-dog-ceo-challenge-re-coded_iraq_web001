@@ -12,3 +12,16 @@ fetch(imgUrl)
     imgContainer.appendChild(img);
   }
 })
+
+const breedUrl = 'https://dog.ceo/api/breeds/list/all'
+fetch(breedUrl)
+.then(response => response.json())
+.then(result => {
+  let breedContainer = document.querySelector('#dog-breeds');
+  console.log(result);
+  // for (const element of result.message){
+  //   let img = document.createElement('img');
+  //   img.src = `${element}`;
+  //   imgContainer.appendChild(img);
+  // }
+})
