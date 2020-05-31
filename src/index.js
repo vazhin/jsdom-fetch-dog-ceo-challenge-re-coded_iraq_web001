@@ -21,8 +21,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   .then(response => response.json())
   .then(result => updateBreeds)
 
-  )
-
 
   let breedDropdown = document.querySelector('#breed-dropdown');
   breedDropdown.addEventListener('change', (event) => {
