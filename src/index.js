@@ -37,6 +37,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
       })
     }
   })
-
-      // let breed = document.getElementsByClassName('breed')
 })
