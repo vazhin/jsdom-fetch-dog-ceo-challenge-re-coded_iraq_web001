@@ -24,5 +24,6 @@ fetch(breedUrl)
     let breed = document.createElement('li');
     breed.innerText = key;
     breedContainer.appendChild(breed);
+    breed.addEventListener('click', () => breed.style.color = 'red')
   }
 })
