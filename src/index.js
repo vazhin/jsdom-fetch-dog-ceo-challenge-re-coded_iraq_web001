@@ -19,7 +19,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
   fetch(breedUrl)
   .then(response => response.json())
-  .then(result => {
+  .then(result => updateBreeds)
+    
+  })
+
+
+  let breedDropdown = document.querySelector('#breed-dropdown');
+  breedDropdown.addEventListener('change', (event) => {
+    if (breed.innerText.charAt(0) == event.target.value){
+      breedContainer.appendChild(breed);
+    }
+  })
+
+  let breed = document.getElementsByClassName('breed')
+  console.log(breed.innerText);
+
+  function updateBreeds (){
     let breedContainer = document.querySelector('#dog-breeds');
     for (const key in result.message){
       let breed = document.createElement('li');
@@ -28,16 +43,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       breedContainer.appendChild(breed);
       breed.addEventListener('click', () => breed.style.color = 'red')
     }
-  })
-
-  let breed = document.getElementsByClassName('breed')
-  console.log(breed.innerText);
-  // let breedDropdown = document.querySelector('#breed-dropdown');
-  // breedDropdown.addEventListener('change', (event) => {
-  //   if (breed.innerText.charAt(0) == event.target.value){
-  //     breedContainer.appendChild(breed);
-  //   }
-  // })
+  }
 
 
 
