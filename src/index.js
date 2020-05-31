@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   })
 
   let breed = document.getElementsByClassName('breed')
-  console.log(breed.innerText);
+  console.log(breed.value);
   // let breedDropdown = document.querySelector('#breed-dropdown');
   // breedDropdown.addEventListener('change', (event) => {
   //   if (breed.innerText.charAt(0) == event.target.value){
