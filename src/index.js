@@ -29,3 +29,6 @@ fetch(breedUrl)
 })
 
 let breedDropdown = document.querySelector('#breed-dropdown');
+
+console.log(breedDropdown.value);
+
