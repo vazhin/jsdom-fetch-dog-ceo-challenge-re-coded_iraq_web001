@@ -9,7 +9,7 @@ fetch(imgUrl)
   console.log(result.message);
   for (const element of result.message){
     console.log(element);
-    let img = document.createElement('div');
+    let img = document.createElement('img');
     img.src = `${element}`;
     imgContainer.appendChild(img);
   }
