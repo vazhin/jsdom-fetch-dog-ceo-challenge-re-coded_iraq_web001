@@ -28,13 +28,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
       breedContainer.appendChild(breed);
       breed.addEventListener('click', () => breed.style.color = 'red')
     }
-    let breed = document.getElementsByClassName('breed')
-    setTimeout(function(){ breed.remove }, 3000);
-    // let breedDropdown = document.querySelector('#breed-dropdown');
-    // breedDropdown.addEventListener('change', (event) => {
-    //   if (breed.innerText.charAt(0) == event.target.value){
-    //     breedContainer.appendChild(breed);
-    //   }
-    // })
+
+
+    let breedDropdown = document.querySelector('#breed-dropdown');
+    breedDropdown.addEventListener('change', (event) => {
+      if (breed.innerText.charAt(0) == event.target.value){
+        breedContainer.appendChild(breed);
+      }
+    })
   })
+
+      // let breed = document.getElementsByClassName('breed')
 })
