@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     for (const key in result.message){
       let breed = document.createElement('li');
       breed.innerText = key;
-      
+
       breed.addEventListener('click', () => breed.style.color = 'red')
-      
+
       let breedDropdown = document.querySelector('#breed-dropdown');
       breedDropdown.addEventListener('change', (event) => {
         if (breed.innerText.charAt(0) == event.target.value){
